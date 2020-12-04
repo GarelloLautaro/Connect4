@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>lppaFinalContact</title>
+		<link rel="stylesheet" href="../css/reset.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<form class="frm" id="frm" method="GET">
+				<!-- btnReturn-->
+				<button class="return"><a href=>Regresar</a></button>
+				<div class="space"></div>
+				<!-- Title-->
+				<h1>Formulario</h1>
+				<!-- TextBoxs-->
+				<div class="textBox">
+					<label for="name">Nombre</label>
+					<input type="text" id="name" name="name">
+					<p id="userNameError" class="textBoxError"></p>
+				</div>
+				<div class="textBox">
+					<label for="surname">Apellido</label>
+					<input type="text" id="surname" name="surname">
+					<p id="surnameError" class="textBoxError"></p>
+				</div>
+				<div class="textBox">
+					<label for="email">Email</label>
+					<input type="text" id="email" name="email" placeholder="correoejemplo@dirección.com ">
+					<p id="emailError" class="textBoxError"></p>
+				</div>
+				<!-- Message-->
+				<div>
+					<label for="" id="commentsError">Comentarios:</label>
+					<textarea class="comment" id="comment" rows="3" cols="60"></textarea>
+				</div>
+				<div class="btn">
+					<button type="submit" id="submit" class="submit">Enviar</button>
+					<button id="refresh" class="refresh"><a href=>Refrescar</a></button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
