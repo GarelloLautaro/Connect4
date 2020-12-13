@@ -73,11 +73,11 @@ input[type="text"]:hover {
     min-width: 100%;
     resize: none;
 }
-.submit, .refresh {
+.submit, .back {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Lexend Tera', sans-serif;
     width: 40%;
     height: 40px;  
     background: #B6916B;
@@ -85,7 +85,7 @@ input[type="text"]:hover {
     border-radius: 20px 20px 20px 20px;
     float: right;
 }
-.refresh {
+.back {
     float: left;
 }
 .submit:hover {

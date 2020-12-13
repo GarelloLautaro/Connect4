@@ -18,4 +18,55 @@
     height: 100%;
     margin: auto;
     padding: 20px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    background-color: #FFFFFF;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.textBox {
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+}
+
+input[type="text"] {
+    background: none;
+    color: black;
+    font-size: 18px;
+    padding: 5px 5px 5px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid
+}
+input[type="text"]:hover {
+    background-color: white;
+}
+
+.buttonPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width:200px;
+    height:60px;
+    background-color: #B9936C;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 50px;
+    font-family: 'Lexend Tera', sans-serif;
+}
+.btn:hover {
+    opacity: 0.50;
+    filter:alpha (opacity=50);
+    border: 2px solid #162814;
 }
