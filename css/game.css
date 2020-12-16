@@ -97,6 +97,14 @@
     background-color: red;
 }
 
+.divider {
+    padding: 0.5em;
+    width: 100%;
+    box-sizing: border-box;
+    background: -webkit-linear-gradient(to right, #B9936C, #5C3C1F);
+    background: linear-gradient(to right, #B9936C, #5C3C1F);
+}
+
 .menu {
     display: flex;
     flex-direction: row;
