@@ -21,7 +21,7 @@
     list-style-type: none;
     background-color: black;
     color: rgb(255, 166, 0);
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Lexend Tera', sans-serif;
 }
 
 .game {
@@ -32,19 +32,19 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    border: 1px solid chartreuse;
+    border: 1px solid #B6916B;
     font-size: 1.5em;
     cursor: pointer;
 }
 
 .game:hover {
-    background-color: chartreuse;
+    background-color: #B6916B;
     color: black;
 }
 
 .game:focus {
     outline: none;
-    border: 3px solid chartreuse;
+    border: 3px solid #B6916B;
 }
 
 .matchContainer {
@@ -88,8 +88,9 @@
     transition: 0.3s;
 }
 
-.buttons {
+.buttonPanel {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -104,7 +105,10 @@
     font-family: 'Lexend Tera', sans-serif;
 }
 .btn:hover {
-    opacity: 0.50;
-    filter:alpha (opacity=50);
+    cursor: pointer;
     border: 2px solid #162814;
+}
+.btn a{
+    color: black;
+    text-decoration: none;
 }

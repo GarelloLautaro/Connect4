@@ -76,7 +76,9 @@
     font-family: 'Lexend Tera', sans-serif;
 }
 .btn:hover {
-    opacity: 0.50;
-    filter:alpha (opacity=50);
     border: 2px solid #162814;
+}
+.btn a{
+    color: black;
+    text-decoration: none;
 }

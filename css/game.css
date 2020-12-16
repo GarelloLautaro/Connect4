@@ -50,7 +50,6 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    border-radius: 20px;
     width: 100%;
 }
 
@@ -63,8 +62,8 @@
     width: 100%;
     flex-grow: 1;
     padding: 0.5em 1em;
-    border-radius: 20px 20px 0 0;
-    background-color: #B9936C;
+    background: -webkit-linear-gradient(to right, #B9936C, #5C3C1F);
+    background: linear-gradient(to right, #B9936C, #5C3C1F);
 }
 
 .column {
@@ -74,11 +73,12 @@
     justify-content: center;
     box-sizing: border-box;
     flex-grow: 1;
-    background-color: #B9936C;
+    background-color: #BD8B52;
 }
 
 .column:hover {
-    background-color:#5C3C1F;
+    background: -webkit-linear-gradient(to right, #B9936C, #5C3C1F);
+    background: linear-gradient(to right, #B9936C, #5C3C1F);
     cursor: pointer;
 }
 
@@ -97,13 +97,6 @@
     background-color: red;
 }
 
-.divider {
-    padding: 0.5em;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #B9936C;
-}
-
 .menu {
     display: flex;
     flex-direction: row;
@@ -112,7 +105,8 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #5C3C1F;
+    background: -webkit-linear-gradient(to right, #B9936C, #5C3C1F);
+    background: linear-gradient(to right, #B9936C, #5C3C1F);
     font-size: 1.2rem;
     color: #0F8FAF;
 }
@@ -165,10 +159,15 @@ button {
 
 button a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
+button:hover {
+    color: black;
+    cursor: pointer;
+    border: 2px solid #162814;
 
+}
 button a:hover,button:hover {
-    color: white;
+    color: black;
     cursor: pointer;
 }
