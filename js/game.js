@@ -93,6 +93,7 @@ var postWin = function () {
     document.getElementById("generalTime").style.display = "none";
     document.getElementById("save").style.display = "none";
     document.getElementById("reset").style.display = "none";
+    document.getElementById("finalMessage").style.display = "flex";
 }
 
 var idFlex = function () {
@@ -103,6 +104,7 @@ var idFlex = function () {
     document.getElementById("save").style.display = "flex";
     document.getElementById("winner").style.display = "none";
     document.getElementById("message").style.display = "none";
+    document.getElementById("finalMessage").style.display = "none";
 }
 
 var getDate = function () {
