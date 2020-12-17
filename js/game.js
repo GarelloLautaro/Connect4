@@ -21,8 +21,6 @@ var savedNames = [];
 var saving = false;
 var isNewGame = null;
 var gameOver = false;
-var threePlayers = false;
-
 
 var twoPlayerBoard = [
     [null, null, null, null, null, null],
@@ -69,8 +67,6 @@ var stopTimers = function () {
 }
 
 var displayPopup = function (playerName) {
-    finalMessage.className = ' ';
-    boardHTML.className = ' disabled blur'
     if (saving) {
         popupWinner.innerHTML = '';
         popupMessage.innerHTML = 'Juego guardado.';
@@ -97,7 +93,6 @@ var postWin = function () {
     document.getElementById("generalTime").style.display = "none";
     document.getElementById("save").style.display = "none";
     document.getElementById("reset").style.display = "none";
-
 }
 
 var idFlex = function () {
@@ -118,6 +113,7 @@ var getDate = function () {
     return day + '/' + month + '/' + year;
 }
 
+/*Aquí se guarda en dos arreglos los datos de la partida y de los timers.*/
 var saveGame = function () {
     savedGames.push({ currentBoard: board.board, p1: p1, p2: p2, turn: turn, date: getDate() });
     savedTimers.push({ p1: p1Timer, p2: p2Timer, globalTime: globalTimer });
@@ -171,6 +167,7 @@ var checkWin = function () {
     }
 }
 
+//checkea si está lleno o vacio el tablero
 var checkDraw = function () {
     for (var i = 0; i < board.board.length; i++) {
         if (board.board[i].includes(null)) {

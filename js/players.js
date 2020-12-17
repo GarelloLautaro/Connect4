@@ -22,7 +22,8 @@ var savePlayerNames = function () {
     playerNames.push({ namep1: p1Nick.value, namep2: p2Nick.value });
     localStorage['playersNames'] = JSON.stringify(playerNames);
 }
-
+/*En estas variables se guardan los nombres de los jugadores en el localstorage y
+en el caso de que se hayan ingresado de forma correcta se avanza a la siguiente pagina.*/
 var nextPage = function () {
     savePlayerNames();
     var newGame = true;

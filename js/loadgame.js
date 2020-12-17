@@ -38,20 +38,6 @@ var selectGame = function (e) {
     btnLoad.className = 'btn';
 }
 
-var navigation = function (e) {
-    var btn = e.target.id;
-    if (btn === 'next') {
-        start += 5;
-        end += 5;
-    } else {
-        if (start >= 5) {
-            start -= 5;
-            end -= 5;
-        }
-    }
-    loadSavedGamesData();
-}
-
 var loadSavedGamesData = function () {
     listSection = arrGameLI.slice(start, end);
 
@@ -63,14 +49,6 @@ var loadSavedGamesData = function () {
             p3HTML[i].innerHTML = savedGames[i].p3.name;
         }
         dateHTML[i].innerHTML = savedGames[i].date;
-    }
-
-    for (var l = 0; l < savedGames.length; l++) {
-        gameLI[l].className = 'game hidden';
-    }
-
-    for (var j = 0; j < listSection.length; j++) {
-        listSection[j].className = ' game';
     }
 }
 
