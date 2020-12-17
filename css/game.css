@@ -36,6 +36,7 @@
     border-radius: 15px;
     font-size: 10px;
     text-align: center;
+    padding: 20px;
     animation: bounce 1.5s;
     z-index: 1;
 }
@@ -114,7 +115,7 @@
     padding: 1.3em;
     border-radius: 50%;
     background-color: white;
-    transition:all .5s ease-in-out;
+    transition:all .1s ease-in-out;
 }
 
 .slot.p1 {
