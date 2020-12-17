@@ -48,14 +48,14 @@
     border: 3px solid #B6916B;
 }
 
-.matchContainer {
+.match-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     min-width: 400px;
-    margin: 0.5em 1em 0 1em;
-    font-size: 1em;
+    margin: 10px 10px 0 10px;
+    font-size: 30px;
     pointer-events: none;
 }
 
