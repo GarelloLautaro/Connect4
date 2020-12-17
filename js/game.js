@@ -237,6 +237,7 @@ var loadSavedGame = function () {
     p1Timer.startTimer();
     p2Timer.startTimer();
     setTimeout(toggleTurn, 1);
+    toggleTurn();
 }
 
 var initialize = function () {
