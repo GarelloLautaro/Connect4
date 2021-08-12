@@ -1,6 +1,6 @@
 # Final LPPA.
 
-## [Click here](https://garellolautaro.github.io/lppaFinal/.)
+## [Click here](https://garellolautaro.github.io/Connect4/)
 
 `Requerido:`
 1. Desarrollar el juego para que sea jugable desde una computadora o un celular cumpliendo con las reglas originales descriptas en wikipedia.
